@@ -12,9 +12,12 @@ KL дивергенция с английским выше, если запис�
 Анизотропия обученного декодера имеет характерную форму для всех языков.
 <img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/blob/main/imgs/anisotropy_agg_no_rand.jpg" />
 
-
 ## Implementation of the Anisotropy computation with the Power Method
-The evaluation of Anisotropy can be done with Cosine Similarity or Maximum Explained Variance (MEV) akin to Ethayarajh 2019. We employ the second approach like in Razzhigaev et al. 2023, but calculate the first singular value using the Power Method and the denominator as the Frobenius norm of the matrix.
+The evaluation of Anisotropy can be done with Cosine Similarity or Maximum Explained Variance (MEV) akin to Ethayarajh 2019. We employ the second approach like in Razzhigaev et al. 2023: 
+```math
+\text{anisotropy}(X) = \frac{\sigma^2_1}{\sum^k_{i=1}\sigma^2_i}
+```
+, but calculate the first singular value using the Power Method and the denominator as the Frobenius norm of the matrix. This implementation has decreased time complexity because we do not compute the whole SVD decomposition.
 
 The implementation of Anisotropy metric in python:
 ```python
