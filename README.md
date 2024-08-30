@@ -10,6 +10,13 @@
 
 - Внутренняя размерность представлений линейно связана с качеством модели
 
+## Ноутбуки
+
+- `languages-exps` - эксперименты с языками, неграмматичным текстами и BPC (bits per character)
+- `model-runs` - эксперименты с разными моделями, подсчёт Intrinsic Dimensionality и Anisotropy
+- `results` - сохраненные метрики
+- `language samples` - таблицы с выборками языков
+- `internal_representations.pdf` - отчет
 
 ## Эксперименты
 
