@@ -3,14 +3,14 @@
 Наша работа посвящена анализу геометрических характеристик эмбеддингов языковых моделей для разных языков. Мы сравнивали внутреннюю размерность, анизотропию и KL дивергенцию между различными языками и английским. Более подробно в нашем отчете.
 
 Внутренняя размерность неграмматичных текстов выше.
-<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/edit/main/imgs/id_ungrammatical.png" />
+<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/blob/main/imgs/id_ungrammatical.png" />
 ID эмбеддингов языков линейно связана с качеством модели. Чем меньше ID, тем выше качество на MMLU.
-<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/edit/main/imgs/5368378111621717603.jpg" />
+<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/blob/main/imgs/5368378111621717603.jpg" />
 Для языков, использующих две письменности:
 KL дивергенция с английским выше, если запись латиницей
-<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/edit/main/imgs/kl_no_agg_alph.jpg" />
+<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/blob/main/imgs/kl_no_agg_alph.jpg" />
 Анизотропия обученного декодера имеет характерную форму для всех языков.
-<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/edit/main/imgs/anisotropy_agg_no_rand.jpg" />
+<img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/blob/main/imgs/anisotropy_agg_no_rand.jpg" />
 
 
 ## Implementation of the Anisotropy computation with the Power Method
