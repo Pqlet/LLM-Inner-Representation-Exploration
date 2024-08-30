@@ -1,0 +1,11 @@
+code,lang,resources,Family,Subgrouping
+ben_Beng,Bengali,High,Indo-European,Indo-Aryan
+bho_Deva,Bhojpuri,Low,Indo-European,Indo-Aryan
+ind_Latn,Indonesian,High,Austronesian,Malayo-Polynesian
+plt_Latn,Plateau Malagasy,Low,Austronesian,Malayo-Polynesian
+zho_Hant,Chinese,High,Sino-Tibetan,Sinitic
+yue_Hant,Yue Chinese,Low,Sino-Tibetan,Sinitic
+zul_Latn,Zulu,High,Atlantic-Cong,Benue-Congo
+ssw_Latn,Swati,Low,Atlantic-Cong,Benue-Congo
+arb_Arab,Modern Standard Arabic,High,Afro-Asiatic,Semitic
+ajp_Ara,South Levantine Arabic,Low,Afro-Asiatic,Semitic

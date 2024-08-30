@@ -1,0 +1,13 @@
+pair,code,language,script
+1,ace_Arab,Acehnese,Arabic
+1,ace_Latn,Acehnese,Latin
+2,arb_Arab,Modern Standard Arabic,Arabic
+2,arb_Latn,Modern Standard Arabic,Latin
+3,knc_Arab,Central Kanuri,Arabic
+3,knc_Latn,Central Kanuri,Latin
+4,min_Arab,Minangkaba,Arabic
+4,min_Latn,Minangkaba,Latin
+5,taq_Latn,Tamasheq,Latin
+5,taq_Tfng,Tamasheq,Tifinagh
+6,zho_Hans,Chinese,Han (Simplified)
+6,zho_Hant,Chinese,Han (Traditional)
