@@ -15,14 +15,14 @@ KL дивергенция с английским выше, если запис�
 Анизотропия обученного декодера имеет характерную форму для всех языков.
 <img src="https://github.com/Pqlet/LLM-Inner-Representation-Exploration/blob/main/imgs/anisotropy_agg_no_rand.jpg" />
 
-## Implementation of the Anisotropy computation with the Power Method
-The evaluation of Anisotropy can be done with Cosine Similarity or Maximum Explained Variance (MEV) akin to Ethayarajh 2019. We employ the second approach like in Razzhigaev et al. 2023: 
+## Оптимизация метода оценки анизотропии с помощью степенного метода
+Оценка анизотропии пространства эмбедингов может быть сделана с помощью Cosine Similarity или Maximum Explained Variance (MEV), как в работе Ethayarajh 2019. Мы используем второй способ, аналогично Razzhigaev et al. 2023: 
 ```math
 \text{anisotropy}(X) = \frac{\sigma^2_1}{\sum^k_{i=1}\sigma^2_i}
 ```
-, but calculate the first singular value using the Power Method and the denominator as the Frobenius norm of the matrix. This implementation has decreased time complexity because we do not compute the whole SVD decomposition.
+, но вычисляем первое сингулярное значение с помощью Степенного метода, а знаменатель по формуле Фробениусовой нормы матрицы эмбедингов. Данная имплементация подсчёта уменьшила временную сложность вычисления анизотропии, потому что не нужно считать полное SVD разложение.
 
-The implementation of Anisotropy metric in python:
+Имплементация на Python:
 ```python
 def calculate_anisotropy_torch(emb):
     embeddings = emb - emb.mean(dim=0, keepdim=True)
